@@ -1,0 +1,351 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>学生端</title>
+<link href="/css/courseShowStyle.css?v=2019-0626-1516" type="text/css" rel="stylesheet">
+<link href="/css/courseMove.css?v=2018-0518-1928" type="text/css" rel="stylesheet">
+<style>
+.Mrtjc3 {border-radius: 5px;color: #fff;height: 10px;line-height: 10px;position: absolute;text-align: center;width: 100%;}
+#top {position:absolute;width:26px;height:26px;background:url(http://mooc1-2.chaoxing.com/img/min_top_22.png) no-repeat;bottom:63px;border-bottom:1px #fff solid;}
+</style>
+<script type="text/javascript" src="/js/set/wayer_v1.2.mini.js"></script>
+<script src="/js/jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/js/ServerHost.js"></script>
+<script type="text/javascript" src="/static/js/domain.js"></script>
+<script src="/js/jquery-often-effects.js" type="text/javascript"></script>
+<script src="/js/image.js"></script>
+<script src="/js/totop.js"></script>
+<script>
+var quitcoursemsg1="您确定要退出此课程？退课后学习记录将无法恢复！";
+var quitthecourse="退课";
+$(function(){
+    $('#zla_title').tab({
+        contentId:'',
+        contentCss:'.zmodel',
+        titleOff:'zla_m_item',
+        titleOn:'zla_m_item zla_m_cur'
+    });
+        $('#zla_title2').tab({
+        contentId:'',
+        contentCss:'.zmodel2',
+        titleOff:'zla_m_item2',
+        titleOn:'zla_m_item2 zla_m_cur2'
+    });
+    
+});
+
+</script>
+</head>
+
+<body style="zoom: 1;">
+    <div class="Wrapbody">
+        <input type="hidden" id="debug" name="debug" value="">
+        
+            
+            <ul class="zla_m_tab" id="zla_title">
+                                  <li class="zla_m_item zla_m_cur"><a href="javascript:void(0)" onclick="getMyStudyCourse(0);">我学的课</a></li>
+                            </ul>
+            <div class="Addkb" id="loading"><img src="/image/loading.gif"></div>
+            <div class="zmodel" style=" display:block;">
+                <script type="text/javascript" src="/js/set/wayer_v1.2.mini.js"></script>
+
+    
+<div class="Addkc">
+    <a href="http://www.fanya.chaoxing.com/schoolcourse/courselist?fid=29243&amp;type=5&amp;categoryNo=-1" target="_top"><span></span> 添加课程</a>
+  </div>
+<style type="text/css">
+.cheatrecord{font-size:14px;position: absolute;right:140px;top:34px;width:77px;height:40px;line-height:40px;}
+.cheatrecord a{font-size:14px;color:#0099ff}
+.cheatrecord a span{display:inline-block;width:16px;height:16px;background:url(../images/cheat_new.png) no-repeat;float:left;margin-top:12px;margin-right:2px;}
+.ulDiv ul li {height: 280px; }
+.faceLayer{display:none;}
+.maskLayer{width:100%;height:100%;background:#fff;opacity:0.3;position:fixed;top:0;left:0;z-index:1002;}
+.faceContainer{width:100%;height:100%;position:fixed;top:0;left:0;z-index:1003;}
+.faceDiv{width:500px;margin:0 auto;background:#000;padding-top:30px;margin-top:10%;position:relative;}
+.faceCancle{position:absolute;top:5px;right:5px;cursor:pointer;display:block;width:20px;height:20px;color:#fff;font-size:16px;text-align:center;ling-height:20px;}
+.gInfo{position:relative;width: 850px;height: 42px;margin-bottom: 15px;margin-top: -10px;}
+.gInfo a{text-decoration: none;color:#333;}
+.gInfo p{line-height: 42px;text-indent:12px;font-size: 13px;background: #fff5eb;    }
+.gInfo span{position: absolute;right:10px;top:15px;width:12px;height: 12px;background: url(/img/gclose.png) no-repeat center;background-size:cover;}
+</style>
+<input type="hidden" id="schoolid" value="29243">
+<input type="hidden" id="userId" value="68426740">
+ <div class="ulDiv" style=" margin-top:10px;  overflow: hidden;font-family: Microsoft YaHei;">
+  
+<input type="hidden" id="moveClassId" value="">
+<input type="hidden" id="faceCourseId" value="">
+<input type="hidden" id="faceClassId" value="">
+<ul>
+            
+    <li style="position:relative">
+        <input type="hidden" name="courseId" value="204686578">
+        <input type="hidden" name="classId" value="9263900">
+        
+        <div class="Mcon1img httpsClass">
+            <a href="https://mooc1-2.chaoxing.com/mycourse/studentcourse?courseId=204686578&amp;clazzid=9263900&amp;cpi=53877482&amp;enc=0217d01331cbbe3ece127ea1daf49ec5" target="_blank">
+                <img src="https://p.ananas.chaoxing.com/star3/270_160c/6ce77a10dd3268daa7ba6c93e5e76459.png" onerror="nofind(event)" imagedata="https://p.ananas.chaoxing.com/star3/270_160/6ce77a10dd3268daa7ba6c93e5e76459.png" width="270" height="169">
+                                </a>
+                        <a href="javascript:void(0)" class="move" style="right: 0px;" title="移动到">
+                移动到         </a>
+        </div>      
+        <div class="Mconright httpsClass">
+                        <h3 class="clearfix">
+                <a href="https://mooc1-2.chaoxing.com/mycourse/studentcourse?courseId=204686578&amp;clazzid=9263900&amp;enc=0217d01331cbbe3ece127ea1daf49ec5" target="_blank" title="17级&nbsp;石油&nbsp;建筑毛泽东思想和中国特色社会主义理论体系概论19-20（上）">17级&nbsp;石油&nbsp;...</a>
+            <i> </i>
+            </h3>
+                                        <p title="张宇彤">张宇彤  </p>
+                <p title="">  </p>
+                <p title="17级石油、建筑">17级石油、建筑</p>
+                                                <p class="Mconrightp3" style="display:none;">       
+            </p>        
+        </div>      
+    </li>
+    <li style="position:relative">
+        <input type="hidden" name="courseId" value="201174433">
+        <input type="hidden" name="classId" value="3473160">
+        
+        <div class="Mcon1img httpsClass">
+            <a href="https://mooc1-2.chaoxing.com/mycourse/studentcourse?courseId=201174433&amp;clazzid=3473160&amp;cpi=53877482&amp;enc=23da88bf2f8df481e4afee489dbe8ebc" target="_blank">
+                <img src="https://p.ananas.chaoxing.com/star3/270_160c/561f6c89e4b0222c70a88536.jpg" onerror="nofind(event)" imagedata="https://p.ananas.chaoxing.com/star3/270_160/561f6c89e4b0222c70a88536.jpg" width="270" height="169">
+                                </a>
+                        <a href="javascript:void(0)" class="move" style="right: 0px;" title="移动到">
+                移动到         </a>
+        </div>      
+        <div class="Mconright httpsClass">
+                        <h3 class="clearfix">
+                <a href="https://mooc1-2.chaoxing.com/mycourse/studentcourse?courseId=201174433&amp;clazzid=3473160&amp;enc=23da88bf2f8df481e4afee489dbe8ebc" target="_blank" title="生理健康">生理健康</a>
+            <i> </i>
+            </h3>
+                                        <p style="color:#0099ff">已开启复习模式 </p>
+                <p style="color:#0099ff">学习将不再统计成绩  </p>
+                                                <p class="Mconrightp3" style="display:none;">       
+            </p>        
+        </div>      
+    </li>
+   <li> 
+    <div class="">  
+        <a href="http://www.fanya.chaoxing.com/schoolcourse/courselist?fid=29243&amp;type=5&amp;categoryNo=-1" target="_top" class="Mdelc2dt" style="height: 202px;padding-top: 76px;" title="添加课程"><span></span></a>   
+    </div>
+ </li>
+ </ul>
+ </div>
+<div class="clearfix teacherArchive">
+    <a class="fr" id="archive" href="/visit/archivecourse/student" style="width: 110px;text-decoration: none;margin-right: 42px;background: #0099ff;height: 28px;line-height: 28px;text-align: center;color: #fff;font-size: 14px;border-radius: 3px;">
+        <b class="" style="width:20px; height:20px; background:url(/images/filecourse/filed.gif) no-repeat;"></b>
+        已结束课程   </a>
+</div>
+<style>
+.tkLayer{position:absolute;left:0;top:35%;width:100%;z-index:99999;}
+.clearfix{zoom:1;}
+.clearfix:after{display:block;content:"";height:0;clear:both;overflow: hidden;}
+.delTk{background:#fff;width:578px;margin:0 auto;border:1px solid #ccc;position:relative;}
+.tkTitle{height:49px;line-height:49px;font-size:16px;font-family:"微软雅黑";padding:0 15px;background:#f0f0f0;border-bottom:1px solid #e0e0e0;}
+.tkCon{font-size:16px;line-height:36px;text-align:center;font-family:"微软雅黑";padding:28px 5px;}
+.selBtn{height:36px;margin-bottom:24px;text-align:center;}
+.confirmBtn,.cancleBtn{display:inline-block;width:96px;font-size:14px;line-height:36px;height:36px;text-align:center;border-radius:3px;}
+.confirmBtn{background:#7b9e31;color:#fff;margin:0 10px;}
+.confirmBtn:hover{background:#8cb833;}
+.cancleBtn{background:#e6e6e6;color:#666;margin:0 10px}
+.cancleBtn:hover{background:#ebebeb;color:#808080;}
+.tkClosed{display:block;width:13px;height:13px;background:url(/space/new/moocIndex/images/closePng.png) no-repeat left center;position:absolute;top:16px;right:15px;}
+</style>
+<!--弹框-->
+<div id="dropTip" class="tkLayer" style="display:none">
+        <div class="delTk clearfix">
+            <h3 class="tkTitle">删除学生<a class="tkClosed" href="javascript:void(0);" onclick="WAY.box.hide();"></a></h3>
+            <p class="tkCon">删除学生后，其学习记录将在24小时后彻底删除。确定要删除吗？</p>
+            <div class="selBtn">
+                <a href="javascript:void(0);" class="confirmBtn">确定</a>
+                <a href="javascript:void(0);" class="cancleBtn" onclick="WAY.box.hide();">取消</a>
+            </div>
+        </div>
+</div>
+<!--弹框 结束--><style>
+.collectionBox{width:578px}
+.zlo_content1{padding:0 22px 22px 22px}
+.collectionTop{height:55px;line-height:55px;border-bottom:solid 1px #e6e6e6;font-size:14px;padding:0 8px}
+.newFolder{background:url(../images/newFolder.png) no-repeat left center;padding-left:30px}
+.colorBlue{color:#0099ff}
+.collectionList{height:360px;overflow:auto}
+.collectionList ul li{padding:15px 8px;height:32px;line-height:32px;border-bottom:solid 1px #e6e6e6;font-size:14px;cursor:pointer}
+.folder{width:38px;height:32px;background:url(../images/folder_new.png) no-repeat;margin-right:10px}
+.nameInp{width:230px;height:24px;line-height:24px;border:solid 1px #63c0ff;border-radius:3px;box-shadow:0 0 5px #63c0ff;padding:0 4px}
+.nameCancel{width:22px;height:22px;border:none;cursor:pointer;background:url(../images/icons_new.png) no-repeat left -48px;margin:0 3px}
+.nameBtn{width:22px;height:22px;border:none;cursor:pointer;background:url(../images/icons_new.png) no-repeat -28px -48px;margin:0 3px}
+.mask{position:fixed;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,.5);z-index:11}
+.zlooo{border:solid 1px #ccc;background:#fff;min-height:178px;position:fixed;top:10%;left:50%;margin-left:-250px;z-index:12}
+.popupTitle{height:43px;border-bottom:solid 1px #d6ebff;background:#f5faff;line-height:43px;padding:0 15px;font-size:16px;}
+.popupClosed{color:#666;width:20px;text-align:center;cursor:pointer}
+.btnDiv{margin-top:15px;}
+.btnDiv a{display:inline-block;width:90px;height:36px;line-height:36px;border-radius:3px;text-align:center;margin:0 11px;font-size:14px}
+.confirmMove{background:#0099ff;color:#fff}
+.confirmMove:hover{background:#33adff}
+.cancleBtn{background:#e6e6e6}
+.fl{float:left;}
+.fr{float:right;}
+</style>
+<div class="zlooo" id="fileDialog" style="display:none;width: 578px;top: 40%">
+        <input type="hidden" id="delFileId" value="">
+        <h3 class="popupTitle"><span onclick="WAY.box.hide();" class="fr popupClosed">X</span>移动到</h3>
+        <div class="zlo_content1">
+            <div class="collectionTop">
+            <a href="javascript:void(0);" class="newFolder fr createFilex">新建文件夹</a>
+            </div>
+            
+            <div class="collectionList clearfix">
+                <ul>
+                <li id="0" class="dir">
+                     <input type="hidden" name="fileId" value="0">
+                    <span class="folder fl"></span>
+                    根目录             </li>
+                                </ul>
+            </div>
+            <div class="btnDiv">
+                <a href="javascript:;" class="confirmMove">确定</a>
+                <a href="javascript:;" class="cancleBtn">取消</a>
+            </div> 
+            <div class="delLayer">
+                <p>删除文件夹，文件夹内的课程会放入根目录下，确定删除吗？</p>
+                <div class="delBtnDiv">
+                    <a href="javascript:;" class="confirmMove" onclick="delFile()">确定</a>
+                    <a href="javascript:;" onclick="javascript:$('.delLayer').css('display','none');" class="cancleBtn">取消</a>
+                </div>
+            </div>              
+        </div>
+</div>
+<script type="text/javascript">
+
+  $(".createFilex").click(function(){
+    var tip = "输入文件夹名称(限16个字)";
+    var newItem="<li><span class=\"folder fl\"></span><div class=\"editFileName\"><input type=\"text\" placeholder=\""+tip+"\" class=\"nameInp\"><input type=\"button\" class=\"nameCancel\"><input type=\"button\" class=\"nameBtn\"></div></li>";
+    $(".collectionList ul ").children().last().after(newItem);
+}); 
+</script><div id="outdelLayer" style="display:none">
+<div class="delLayer" style="display:block;top:0px;left:-149px">
+    <input type="hidden" id="outDelFileID" value="">
+    <p>删除文件夹，文件夹内的课程会放入根目录下，确定删除吗？</p>
+    <div class="delBtnDiv">
+        <a href="javascript:;" class="confirmMove" onclick="outDelFile()">确定</a>
+        <a href="javascript:;" onclick="WAY.box.hide()" class="cancleBtn">取消</a>
+    </div>
+</div>
+</div>
+<div id="js-face" class="face" style="display:none">
+    <div class="zlo_md" style="width:478px;">
+        <h2 class="zlo_title"><span class="zlo_close" onclick="javascript:WAY.box.hide();"></span><span class="zlo_h">提示</span></h2>
+        <div class="zlo_content">
+            <p>该课程需进行“人脸识别”后才可以进行学习，点击“确定”进入人脸识别，请确保已开启了摄像头。</p>
+            <div class="faceBtn">
+                <a href="javascript:;" class="face-confirmBtn">确定</a>
+                <a href="javascript:;" class="face-cancleBtn" onclick="javascript:WAY.box.hide();">取消</a>
+            </div>              
+        </div>
+    </div>
+</div>
+
+<div class="faceLayer" id="faceLayer">  
+    <div class="maskLayer"></div>
+    <div class="faceContainer">
+        <div class="faceDiv">
+            <span class="faceCancle">X</span>
+            <iframe id="faceIframe" frameborder="0" width="500" height="390" src=""></iframe>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery.nicescroll.min.js"></script>
+<script>
+$(function(){
+    $(".faceCancle").click(function(){
+        $("#faceLayer").css("display","none");
+    })
+})
+if(document.domain.indexOf('chaoxing.com')>=0){
+    var domain = "https://"+window.location.hostname;
+    $('.httpsClass').each(function(){
+        var href = $(this).find("a").eq(0).attr("href");
+        if(undefined!=href){
+            $(this).find("a").eq(0).attr("href",domain+href);
+        }    
+    });
+}
+$(function(){
+   var classIds=[];
+    var liList=$(".ulDiv li");
+    var length=liList.length;
+    liList.each(function(index,me){
+    var classid= $(me).find('input[name="classId"]').val();
+     if(index!=length-1){
+         classIds.push(classid);
+         }
+    });
+jQuery.ajax({ 
+            type: "post", 
+            url : "/api/workTestPendingNew", 
+            data: {
+                  classIds:classIds.join(",")
+                }, 
+            success: function(data){
+                var jsonArray= jQuery.parseJSON(data);
+                showRedTip(jsonArray);
+            }
+            }); 
+            
+function showRedTip(jsonArray){
+        liList.each(function(index,me){
+          if(index!=length-1){
+            var json=jsonArray[index];
+            if(json.hasWorkMsg || json.hasExamMsg|| json.hasCourseDataMsg){
+             $(me).find("h3 i").css("display","block");
+             }
+         }
+      });
+    }
+    
+});
+$('.closeInfor').click(function(){      
+    jQuery.ajax({ 
+        type: "post", 
+        url : "/visit/courses/updateInforMation", 
+        data: {
+            inforMation : 1
+        }, 
+        success:function(data) {
+        $('.gInfo').css("display","none");
+        } 
+    }); 
+
+});
+
+$('.inforMation').click(function(){
+    var url =ServerHost.moocDomain+"/visit/courses/lookTips?isAjax=true";   
+    var zmodel1=$(".zmodel");
+    jQuery.ajax({ 
+        url:url,
+        data:'',    
+        type:'get', 
+        success:function(data) {
+        $(zmodel1[study]).html(data);
+        } 
+    }); 
+});
+</script>            </div>
+            <div class="zmodel">
+            
+            </div> 
+    </div>
+
+<script src="/js/teach_Study_Course_New.js?v=2019-0829-1702"></script>
+<script>
+//改变zmodel模块下标值
+tach=1,study=0;
+//studyToDeal();
+//屏蔽信息查询
+//studyMsgDeal();
+quitDeal();  
+//fileDeal();
+</script>
+<p id="to_top" style="position: fixed;_position: absolute;_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));right: 100px;bottom:0px;">
+                                                        
+            <a target="_self" id="top" href="javascript:;" title="返回顶部" style="position:absolute;width:72px;height:36px;line-height:36px;font-size:16px;bottom:96px;border:1px solid #7b9e31;color:#0a0a0a;background:#fff url(http://mooc1-2.chaoxing.com/images/top.png) no-repeat 9px center;padding-left:42px;border-radius:3px;right:-83px;" onclick="$('html,body').animate({scrollTop:0},600);">返回顶部</a>
+        </p></body></html>

@@ -1,0 +1,11 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "notebook_dir": "D:\\sunhao\\python",
+  "password": false,
+  "pid": 9876,
+  "port": 8888,
+  "secure": false,
+  "token": "cf7e09e2ffa8146605c144df2a58ccd839aee9fc477f6d7b",
+  "url": "http://localhost:8888/"
+}
